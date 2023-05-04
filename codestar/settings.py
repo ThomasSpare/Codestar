@@ -9,10 +9,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
-import os
 
 import dj_database_url
 if os.path.isfile('env.py'):
@@ -32,7 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['codestar-spare.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = [
+    "8000-thomasspare-codestar-1ldntv2xbv.us2.codeanyapp.com"]
 
 
 # Application definition
